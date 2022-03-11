@@ -30,13 +30,15 @@ NAVBAR
     justify-content: space-between;
     position:sticky;
     top: 0px;
+    z-index: 1;
+    
  }
 
  .navbar div{
      text-align: center;
      display:flex;
      flex-wrap: wrap;
-     /*justify-content: left;*/
+     justify-content: left;
      margin-top: 10px;
  
  }
@@ -57,66 +59,216 @@ NAVBAR
     font-weight: 100;
 }
 .containerLogo{
-    height:750px;
-    width:auto;
+    height:0px;
+    width:100%;
     display:flex;
-    background-image: url(../img/suburban_slide.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     flex-wrap:wrap;
     padding: 0px;
     margin: 0px;
     justify-content: space-between;
+    position:sticky;
+    top: 50px;
+    z-index: 1;
 
    
  }
 
  .containerLogo div{
      text-align: center;
-     display:block;
      flex-wrap: wrap;
      justify-content: left;
      
    
  
  }
- .containerLogo div a{
-    
-    position:sticky;
-    top: 130px;
-  
-  
 
-}
 .containerLogo div a img{
 
+   
     height:80px;
     padding-left:120px;
+    position:sticky;
+    top: 50px;
   
+    
+}
+.navbarButtons a{
+    font-size:35px;
+    color: rgb(104, 212, 203);
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    padding-right: 60px;
+    text-align: center;
+    line-height: center;
+    position:sticky;
+    top: 50px;
+    z-index: 1;
+  
+   
+
+}
+.navbarButtons:active{
+    text-decoration: none;
+}
+.slider{
+
+    position:relative;
+    background-size: fill;
+    left: 0;
+    top:0;
+    width: 100%;
+ 
     
 }
 
 /*=========================================
 FIN NAVBAR
 =========================================*/
-
-
-/*=========================================
-SLIDER
-=========================================*/
-
-section.slider {
-    height:600px;
-    width:100%;
-    background-color:black;
+.cuerpo{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:grey;
 }
 
 /*=========================================
-FIN SLIDER
+BOTON DE BOOK
+=========================================*/
+.cajaBoton{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width: 100%;
+    
+
+}
+.botonBook {
+    
+ 
+    width: 50%;
+    height: 60px;
+    background-color: rgb(104, 212, 203);
+    position: relative;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    margin: 20px;
+    padding:20px;
+    font-weight: 100;
+   
+
+}
+
+
+/*=========================================
+FIN BOTON DE BOOK
 =========================================*/
 
+/*=========================================
+ARTICLE
+=========================================*/
+article{
+    margin:50px 250px;
+}
+article .texto{
+    display:"flex";
+    flex-wrap: wrap;
+    flex-direction:"row";
+    justify-content:center;
+    width:100%;
 
+}
+article .texto h1{
+    display:"flex";
+    font-size:40px;
+    color:rgb(104, 212, 203) ;
+    text-align:center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin:50px;
 
+}
+article .texto p{
+    
+    font-size:15px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width:100%;
+    box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*=========================================
+autos
+=========================================*/
+
+.autos{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-items: flex-start;
+   
+
+}
+article .autos img{
+    width:180px;
+}
+article .autos .auto1{
+    order: 0;
+    flex:1 1 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-self: auto;
+    width:50px;
+    height: 100px;
+    
+}
+article .autos .auto2{
+    order: 0;
+    flex:1 1 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-self: auto;
+    width:50px;
+    height: 100px;
+   
+}
+article .autos .auto3{
+    order: 0;
+    flex:1 1 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-self: auto;
+    width:50px;
+    height: 100px;
+ 
+}
+article .autos .auto4{
+    order: 0;
+    flex:1 1 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-self: auto;
+    width:50px;
+    height: 100px;
+   
+}
+article .autos .auto5{
+    order: 0;
+    flex:1 1 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-self: auto;
+    width:50px;
+    height: 100px;
+   
+}
+
+/*=========================================
+FIN DE autos
+=========================================*/
+
+/*=========================================
+FIN DE ARTICLE
+=========================================*/
 
 
 
@@ -202,6 +354,7 @@ PANTALLA DE ESCRITORIO MEDIANA - MEDIUM (md)
     .col-md-3{width: 25%;}
     .col-md-2{width: 16.66666667%;}
     .col-md-1{width: 8.33333333%;}
+  
 
 }
 /*=========================================
@@ -221,6 +374,7 @@ PANTALLA DE TABLET - SMALL(sm)
     .col-sm-3{width: 25%;}
     .col-sm-2{width: 16.66666667%;}
     .col-sm-1{width: 8.33333333%;}
+  
 
 }
 /*=========================================
