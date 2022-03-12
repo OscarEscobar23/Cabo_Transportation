@@ -125,10 +125,13 @@ NAVBAR
 FIN NAVBAR
 =========================================*/
 .cuerpo{
-    display:flex;
-    flex-wrap: wrap;
+    /*display:flex;
+    flex-wrap: wrap;*/
     align-items: center;
-    background-color:grey;
+    background-color:white;
+    margin:0px;
+    padding:0px;
+    width: 100%;
 }
 
 /*=========================================
@@ -145,7 +148,7 @@ BOTON DE BOOK
 .botonBook {
     
  
-    width: 50%;
+    width: 80%;
     height: 60px;
     background-color: rgb(104, 212, 203);
     position: relative;
@@ -191,7 +194,7 @@ article .texto h1{
 article .texto p{
     
     font-size:15px;
-    text-align: center;
+    text-align: justify;
     font-family: 'Montserrat Alternates', sans-serif;
     width:100%;
     box-sizing: border-box;
@@ -199,6 +202,7 @@ article .texto p{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    color: #212529;
 }
 /*=========================================
 autos
@@ -206,24 +210,38 @@ autos
 
 .autos{
     display:flex;
-    flex-flow:row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*align-items: flex-start;
+    align-items: flex-start;*/
+    margin:80px 0px 130px 0px;
+    
    
 
 }
 article .autos img{
-    width:180px;
+    width:100px;
 }
 article .autos .auto1{
     order: 0;
     flex:1 1 auto;
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
-    width:50px;
-    height: 100px;
+    width:6px;
+    height: 280px;
+    text-align: center;
+    border: 1px solid black;
+    background-color:#f8f9fa;
+    margin: 10px;
     
+}
+.cuerpo article .autos .auto1 .subCard{
+    
+    height: 108px;
+    width: 100%;
+    background-size: 204px;
+    background-repeat: no-repeat;
+    background-image:url(../img/suburban_card.jpg);
 }
 article .autos .auto2{
     order: 0;
@@ -231,8 +249,20 @@ article .autos .auto2{
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
     width:50px;
-    height: 100px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    background-color:#f8f9fa;
+    margin: 10px;
    
+}
+.cuerpo article .autos .auto2 .ford{
+    
+    height: 150px;
+    width: 100%;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-image:url(../img/expedition_card.jpg);
 }
 article .autos .auto3{
     order: 0;
@@ -240,8 +270,19 @@ article .autos .auto3{
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
     width:50px;
-    height: 100px;
- 
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    background-color:#f8f9fa;
+    margin: 10px;
+}
+.cuerpo article .autos .auto3 .toyota{
+    
+    height: 150px;
+    width: 100%;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-image:url(../img/van_card.jpg);
 }
 article .autos .auto4{
     order: 0;
@@ -249,22 +290,105 @@ article .autos .auto4{
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
     width:50px;
-    height: 100px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    background-color:#f8f9fa;
+    margin: 10px;
    
 }
-article .autos .auto5{
-    order: 0;
-    flex:1 1 auto;
-    font-family: 'Montserrat Alternates', sans-serif;
-    align-self: auto;
-    width:50px;
-    height: 100px;
-   
+.cuerpo article .autos .auto4 .vw{
+    
+    height: 150px;
+    width: 100%;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-image:url(../img/vw_card.jpg);
 }
+
 
 /*=========================================
 FIN DE autos
 =========================================*/
+/*=========================================
+INICIO DE PRECIOS
+=========================================*/
+.zonas{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: flex-start;
+    margin-top:0px;
+    margin-bottom:30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+   
+
+}
+.zonas .zone{
+    display:block;
+    height:150px;
+    width:100%;
+    border: 1px solid #f2f2f2;
+    background-color:#f8f9fa;
+    text-align:center;
+}
+.zonas .zone .zone_top{
+    border: 1px solid #f2f2f2;
+}
+.zonas .zone .zone_round{
+    border: 1px solid #f2f2f2;
+    background-color:white;
+}
+.zonas .zone .zone_oneWay{
+    border: 1px solid #f2f2f2;
+    background-color:white;
+}
+.zonas .zone .zone_boton{
+    border: 1px solid #f2f2f2;
+    background-color:white;
+}
+/*=========================================
+FIN DE PRECIOS
+=========================================*/
+/*=========================================
+REDES
+=========================================*/
+
+.redes{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: flex-start;
+    margin-top:50px;
+}
+
+.redes .texto_redes{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    margin:20px ;
+    
+}
+.redes .texto_redes h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    color: rgb(104, 212, 203);
+    font-size: 20px;
+    
+}
+.redes .texto_redes p{
+
+    color: black;
+    font-size:15px;
+    text-align: justify;
+
+    
+}
+/*=========================================
+FIN DE REDES
+=========================================*/
+
 
 /*=========================================
 FIN DE ARTICLE
