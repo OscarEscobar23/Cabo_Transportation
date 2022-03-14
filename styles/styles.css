@@ -125,41 +125,36 @@ NAVBAR
 FIN NAVBAR
 =========================================*/
 .cuerpo{
-    /*display:flex;
-    flex-wrap: wrap;*/
-    align-items: center;
+    display:flex;
+    flex-flow: column nowrap;
     background-color:white;
-    margin:0px;
-    padding:0px;
-    width: 100%;
+    align-items: center;
+  
 }
 
 /*=========================================
 BOTON DE BOOK
 =========================================*/
-.cajaBoton{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    width: 100%;
-    
 
-}
 .botonBook {
     
  
-    width: 80%;
+    width: 90%;
     height: 60px;
     background-color: rgb(104, 212, 203);
-    position: relative;
-    border: 1px solid black;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
     font-family: 'Montserrat Alternates', sans-serif;
     color: white;
-    margin: 20px;
-    padding:20px;
+    margin: 20px 0px;
     font-weight: 100;
+    
    
+
+}
+.botonBook h3{
+    line-height: center;
 
 }
 
@@ -171,63 +166,49 @@ FIN BOTON DE BOOK
 /*=========================================
 ARTICLE
 =========================================*/
-article{
-    margin:50px 250px;
-}
-article .texto{
+
+.texto{
     display:"flex";
-    flex-wrap: wrap;
-    flex-direction:"row";
-    justify-content:center;
     width:100%;
+   
 
 }
-article .texto h1{
-    display:"flex";
+.texto h1{
     font-size:40px;
     color:rgb(104, 212, 203) ;
     text-align:center;
     font-family: 'Montserrat Alternates', sans-serif;
     margin:50px;
+    width:auto;
 
 }
-article .texto p{
+.texto p{
     
     font-size:15px;
     text-align: justify;
     font-family: 'Montserrat Alternates', sans-serif;
-    width:100%;
-    box-sizing: border-box;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #212529;
+    padding:0px 250px;
+    color: #5d5f61;
 }
 /*=========================================
 autos
 =========================================*/
 
 .autos{
+    flex:4 1 auto;
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /*align-items: flex-start;
-    align-items: flex-start;*/
+    flex-flow:row wrap;
     margin:80px 0px 130px 0px;
-    
-   
+     
 
 }
-article .autos img{
-    width:100px;
-}
-article .autos .auto1{
+
+.auto{
     order: 0;
     flex:1 1 auto;
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
-    width:6px;
+    width:auto;
     height: 280px;
     text-align: center;
     border: 1px solid black;
@@ -235,7 +216,7 @@ article .autos .auto1{
     margin: 10px;
     
 }
-.cuerpo article .autos .auto1 .subCard{
+.sub{
     
     height: 108px;
     width: 100%;
@@ -243,20 +224,8 @@ article .autos .auto1{
     background-repeat: no-repeat;
     background-image:url(../img/suburban_card.jpg);
 }
-article .autos .auto2{
-    order: 0;
-    flex:1 1 auto;
-    font-family: 'Montserrat Alternates', sans-serif;
-    align-self: auto;
-    width:50px;
-    height: 250px;
-    text-align: center;
-    border: 1px solid black;
-    background-color:#f8f9fa;
-    margin: 10px;
-   
-}
-.cuerpo article .autos .auto2 .ford{
+
+.ford{
     
     height: 150px;
     width: 100%;
@@ -264,19 +233,8 @@ article .autos .auto2{
     background-repeat: no-repeat;
     background-image:url(../img/expedition_card.jpg);
 }
-article .autos .auto3{
-    order: 0;
-    flex:1 1 auto;
-    font-family: 'Montserrat Alternates', sans-serif;
-    align-self: auto;
-    width:50px;
-    height: 250px;
-    text-align: center;
-    border: 1px solid black;
-    background-color:#f8f9fa;
-    margin: 10px;
-}
-.cuerpo article .autos .auto3 .toyota{
+
+.toyota{
     
     height: 150px;
     width: 100%;
@@ -284,20 +242,8 @@ article .autos .auto3{
     background-repeat: no-repeat;
     background-image:url(../img/van_card.jpg);
 }
-article .autos .auto4{
-    order: 0;
-    flex:1 1 auto;
-    font-family: 'Montserrat Alternates', sans-serif;
-    align-self: auto;
-    width:50px;
-    height: 250px;
-    text-align: center;
-    border: 1px solid black;
-    background-color:#f8f9fa;
-    margin: 10px;
-   
-}
-.cuerpo article .autos .auto4 .vw{
+
+.vw{
     
     height: 150px;
     width: 100%;
@@ -318,14 +264,13 @@ INICIO DE PRECIOS
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    align-items: flex-start;
     margin-top:0px;
     margin-bottom:30px;
     font-family: 'Montserrat Alternates', sans-serif;
    
 
 }
-.zonas .zone{
+.zone{
     display:block;
     height:150px;
     width:100%;
@@ -333,18 +278,18 @@ INICIO DE PRECIOS
     background-color:#f8f9fa;
     text-align:center;
 }
-.zonas .zone .zone_top{
+.zone_top{
     border: 1px solid #f2f2f2;
 }
-.zonas .zone .zone_round{
-    border: 1px solid #f2f2f2;
-    background-color:white;
-}
-.zonas .zone .zone_oneWay{
+.zone_round{
     border: 1px solid #f2f2f2;
     background-color:white;
 }
-.zonas .zone .zone_boton{
+.zone_oneWay{
+    border: 1px solid #f2f2f2;
+    background-color:white;
+}
+.zone_boton{
     border: 1px solid #f2f2f2;
     background-color:white;
 }
@@ -360,24 +305,23 @@ REDES
     flex-flow:row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    align-items: flex-start;
     margin-top:50px;
 }
 
-.redes .texto_redes{
+.texto_redes{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     margin:20px ;
     
 }
-.redes .texto_redes h2{
+.texto_redes h2{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     color: rgb(104, 212, 203);
     font-size: 20px;
     
 }
-.redes .texto_redes p{
+.texto_redes p{
 
     color: black;
     font-size:15px;
