@@ -204,53 +204,30 @@ autos
 }
 
 .auto{
-    order: 0;
-    flex:1 1 auto;
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
     width:auto;
     height: 280px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #acafb1;
     background-color:#f8f9fa;
     margin: 10px;
+    font-weight: 100;
     
 }
-.sub{
+.auto img{
     
     height: 108px;
     width: 100%;
-    background-size: 204px;
-    background-repeat: no-repeat;
-    background-image:url(../img/suburban_card.jpg);
+    
+}
+.auto h2{
+    margin: 20px 0px;
+}
+.auto p{
+    margin: 0px 15px;
 }
 
-.ford{
-    
-    height: 150px;
-    width: 100%;
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-image:url(../img/expedition_card.jpg);
-}
-
-.toyota{
-    
-    height: 150px;
-    width: 100%;
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-image:url(../img/van_card.jpg);
-}
-
-.vw{
-    
-    height: 150px;
-    width: 100%;
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-image:url(../img/vw_card.jpg);
-}
 
 
 /*=========================================
