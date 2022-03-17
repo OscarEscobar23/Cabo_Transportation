@@ -688,7 +688,7 @@ PANTALLA DE TABLET - SMALL(sm)
         width:50%;
         font-size: 15px;
     }
-    
+   
 }
 /*=========================================
 PANTALLA DE PHONES - EXTRA SMALL(xs)
@@ -739,9 +739,6 @@ PANTALLA DE PHONES - EXTRA SMALL(xs)
     .parrafo{
         width:50%;
         font-size: 15px;
-    }
-    .footerflex{
-        display:grid
     }
     
 
