@@ -340,7 +340,7 @@ REDES
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     margin:50px ;
-    width:auto;
+    width:300px;
     
 }
 .texto_redes h2{
@@ -492,30 +492,36 @@ FOOTER
 }
 .footerContainer .fila div {
     text-align: center;
+    align-items: center;
+    width: 100%;
 }
-.footerContainer .fila div img{
-    width:30%;
+.footerContainer .footerflex div img{
+    width:150px;
    
 }
-.footerContainer .fila div h3{
+.footerContainer .footerflex div h3{
     color: #5d5f61;
     font-size:20px;
 }
-.footerContainer .fila div i a{
+.footerContainer .footerflex div i a{
     text-decoration:none;
     color: #5d5f61;
 
 }
-.footerContainer .fila div p a{
+.footerContainer .footerflex div p a{
     text-decoration:none;
     color: #5d5f61;
 }
-.footerContainer .fila div p a:active{
+.footerContainer .footerflex div p a:active{
     color: #5d5f61;
 }
-.flexfooter{
+.footerflex{
     display:flex;
+    flex-flow: row wrap;
+    flex:3 1 auto;
+    justify-content:space-around;
     align-items: center;
+   
 }
 
 .copyrigth{
@@ -595,6 +601,11 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg)
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+    .footerflex{
+        display:grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
 
 }
 /*=========================================
@@ -618,6 +629,10 @@ PANTALLA DE ESCRITORIO MEDIANA - MEDIUM (md)
     .form_map{
         display:grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .footerflex{
+        display:grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 /*=========================================
@@ -673,6 +688,7 @@ PANTALLA DE TABLET - SMALL(sm)
         width:50%;
         font-size: 15px;
     }
+    
 }
 /*=========================================
 PANTALLA DE PHONES - EXTRA SMALL(xs)
@@ -724,5 +740,9 @@ PANTALLA DE PHONES - EXTRA SMALL(xs)
         width:50%;
         font-size: 15px;
     }
+    .footerflex{
+        display:grid
+    }
+    
 
 }
