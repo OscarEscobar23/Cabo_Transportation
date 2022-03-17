@@ -216,7 +216,8 @@ autos
     flex:4 1 auto;
     display:flex;
     flex-flow:row wrap;
-    margin:80px 0px 130px 0px;
+    margin:80px 0px 50px 0px;
+    justify-content:center;
      
 
 }
@@ -224,13 +225,14 @@ autos
 .auto{
     font-family: 'Montserrat Alternates', sans-serif;
     align-self: auto;
-    width:auto;
+    width:200px;
     height: 280px;
     text-align: center;
     border: 1px solid #acafb1;
     background-color:#f8f9fa;
     margin: 10px;
     font-weight: 100;
+    border-radius:5px;
     
 }
 .auto img{
@@ -274,6 +276,7 @@ INICIO DE PRECIOS
     text-align:center;
     align-self: auto;
     margin:35px;
+    border-radius:5px;
     
 }
 .zone_top{
@@ -356,10 +359,10 @@ REDES
     
 }
 .insta{
-    width:100%;
+    width:400px;
 }
 .facebook{
-    width:100%;
+    width:370px;
 }
 /*=========================================
 FIN DE REDES
@@ -436,7 +439,7 @@ CONTACTENOS
 .map{
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-items: center;
 }
 
 
