@@ -338,14 +338,15 @@ REDES
   display: flex;
   justify-content:space-between;
     margin-top:50px;
+    width: 80%;
  
 }
 
 .texto_redes{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
-    margin:20px ;
-    width:300px;
+    margin:24px ;
+    width:50%;
     
 }
 .texto_redes h2{
